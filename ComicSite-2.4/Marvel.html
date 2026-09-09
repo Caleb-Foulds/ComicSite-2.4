@@ -3,16 +3,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<div class="overflow-hidden w-full bg-red-700 border-2 border-gray-950">
+<div class="overflow-hidden w-full grid grid-cols-2 bg-red-700 border-2 border-gray-950">
+    <button class="col-span-2 mx-auto h-16 lg:h-32">
+        <img class="h-16 lg:h-32" src="Images\marvel_dc-3.png" />
+    </button>
     <!--<img src="marvel dc.png"/> Testing without image-->
-    <button class="text-white">
-        Marvel
+    <button class="text-white bg-red-600 active:bg-red-400 px-4 border-gray-950 border">
+        MARVEL
     </button>
-    <button class="text-white">
+    <button class="text-white hover:bg-blue-800 active:bg-blue-400 px-4 border-gray-950 border">
         DC
-    </button>
-    <button class="text-white">
-        Parallels
     </button>
 </div>
 
@@ -30,16 +30,34 @@
     </video>
 
 </div>
-<div class="h-screen bg-gray-950">
-<div class="grid grid-cols-1">
-    <h1 class="text-4xl mx-auto text-white p-6">
+<div class="h-1/2 bg-gray-950">
+<div class="grid grid-cols-1 py-16">
+    <h1 class="text-4xl mx-auto text-red-500 p-6">
         MARVEL BEGINS
     </h1>
-    <p1 class="text-white bg-red-950 mx-6 md:mx-1048 rounded-xl p-2">
+    <p1 class="text-white bg-red-950 mx-auto w-1/2 rounded-xl p-2">
     Marvel Comics (at the time known as Timely Comics) was founded in the year 1939, releasing their first comic in August of that year.
     Their first comic features the first apparences of both The Android Human Torch and Namor the Sub-Mariner. 
-    The modern era of marvel started in 1961 when The Fantastic Four #1 comic was released. 
+    Marvel become the comic company's name due to a bussiness stratagy where Timely Comics used various shell companies to relase their comics.
+    One of these companies was called Marvel Comics, and it's name was first used as the primary name of the company in 1961.
+    The modern era of Marvel also started in 1961, when The Fantastic Four #1 comic was released. 
     </p1>
+</div>
+<div class="grid h-screen bg-gray-950">
+    <h2 class="text-4xl mx-auto text-red-500 p-6">
+        FAMOUS MARVEL TEAMS
+    </h2>
+    <div>
+        <div class="grid w-1/4 bg-red-800 rounded-lg mx-2">
+            <h3 class="text-white text-2xl mx-auto">
+THE AVENGERS
+            </h3>
+            <img class="mx-auto" src="Images\Avengers3.png">
+            <p3 class="bg-red-400 overflow-hidden rounded-xl p-2 m-2">
+The Avengers are a staple hero team in the Marvel Universe. This Team has gone thourgh various iterations thourghout it's history,
+            </p3>
+        </div>
+    </div>
 </div>
 </div>
 </html>

@@ -3,16 +3,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<div class="overflow-hidden w-screen bg-red-700 border-2 border-gray-950">
+<div class="overflow-hidden w-full grid grid-cols-2 bg-red-700 border-2 border-gray-950">
+    <button class="col-span-2 mx-auto h-16 lg:h-32">
+        <img class="h-16 lg:h-32" src="Images\marvel_dc-3.png" />
+    </button>
     <!--<img src="marvel dc.png"/> Testing without image-->
-    <button class="text-white">
-        Marvel
+    <button class="text-white hover:bg-red-600 active:bg-red-400 px-4">
+        MARVEL
     </button>
-    <button class="text-white">
+    <button class="text-white hover:bg-blue-800 active:bg-blue-400 px-4">
         DC
-    </button>
-    <button class="text-white">
-        Parallels
     </button>
 </div>
 
@@ -26,11 +26,11 @@
 </div>
 
 <div class="grid md:grid-cols-2 grid-cols-1 gap-2 block place-items-center w-screen h-7/8 md:h-screen xl:h-[vh-150] md:p-16 p-8 from-gray-950 bg-gradient-to-b to-blue-900"> <!--displays Marvel and DC images side-by-side-->
-    <div class="flex items-center justify-center grid overflow-hidden rounded-lg w-1/2 md:w-3/4 max-h-full 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm">
+    <div class="flex items-center justify-center grid overflow-hidden rounded-lg w-1/2 md:w-3/4 max-h-full 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm"> <!--groups the Marvel image and Marvel logo together in a grid within the same slot to place the logo over the image-->
         <img src="Images\Avengers.jpg" class="col-start-1 row-start-1 w-full h-auto"/>
         <img src="Images\MarvelLogoPNG.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-4"/>
     </div>
-    <div class="flex items-center justify-center grid overflow-hidden rounded-lg w-1/2 md:w-3/4 max-h-full 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm">
+    <div class="flex items-center justify-center grid overflow-hidden rounded-lg w-1/2 md:w-3/4 max-h-full 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm"> <!--groups the DC image and DC logo together in a grid within the same slot to place the logo over the image-->
         <img src="Images\JusticeLeague.jpg" class="col-start-1 row-start-1 w-full h-auto"/>
         <img src="Images\DCLogoBlue.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-4"/>
     </div>
