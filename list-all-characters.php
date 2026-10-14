@@ -9,19 +9,19 @@
     $results = mysqli_query( $link, $query ) or die( mysqli_error( $link ) );
 
     // loop to keep fetching records from the results, until none left
-    while( $pet = mysqli_fetch_assoc( $results ) )
+    while( $character = mysqli_fetch_assoc( $results ) )
     {
         // show the record data
-        print '<p>Name:'.$pet['name'];
-        print '<br>Alter_ego:'.$pet['alter_ego'];
-        print '<br>Distributor:'.$pet['distributor'];
-        print '<br>Allegance:'.$pet['allegance'];
-        print '<br>First_publication:'.$pet['first_publication'];
-        print '<br>Location:'.$pet['location'];
-        print '<br>Human:'.$pet['human'];
-        print '<br>Powers:'.$pet['powers'];
-        print '<br>Affiliation:'.$pet['affiliation'];
-        print '<br>Affiliation_id:'.$pet['affiliation_id'];
+        print '<p>Name:'.$character['name'];
+        print '<br>Alter_ego:'.$character['alter_ego'];
+        print '<br>Distributor:'.$character['distributor'];
+        print '<br>Allegance:'.$character['allegance'];
+        print '<br>First_publication:'.$character['first_publication'];
+        print '<br>Location:'.$character['location'];
+        print '<br>Human:'.$character['human'];
+        print '<br>Powers:'.$character['powers'];
+        print '<br>Affiliation:'.$character['affiliation'];
+        print '<br>Affiliation_id:'.$character['affiliation_id'];
     }
 
     // close the MySQL server connection
