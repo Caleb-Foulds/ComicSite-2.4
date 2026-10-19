@@ -7,7 +7,7 @@
 
     // pass the query to the server, hopefully getting back a set of results
     $results = mysqli_query( $link, $query ) or die( mysqli_error( $link ) );
-
+    include( 'common-top.php' );
     // loop to keep fetching records from the results, until none left
     while( $character = mysqli_fetch_assoc( $results ) )
     {
@@ -23,7 +23,7 @@
         print '<br>Affiliation:'.$character['affiliation'];
         print '<br>Affiliation_id:'.$character['affiliation_id'];
     }
-
+    include( 'common-bottom.php' );
     // close the MySQL server connection
     mysqli_close( $link );
 ?>
