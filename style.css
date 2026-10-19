@@ -1,0 +1,12 @@
+html {
+    background-color: #999;
+}
+
+body {
+    width: 50%;
+    min-width: 640px;
+    margin: 50px auto;
+    padding: 10px 30px;
+    background-color: #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
