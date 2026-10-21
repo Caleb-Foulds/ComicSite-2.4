@@ -28,7 +28,7 @@
 </nav>
 
 <!-- Hero Banner Section -->
-<header class="w-full overflow-hidden bg-purple-700">
+<header class="relative w-full overflow-hidden bg-purple-700">
     <!-- Mobile Full Bleed Banner Image -->
     <div class="flex items-center -ml-[50vw] -mr-[50vw] md:hidden border-2 border-purple-950">
         <img class="w-full h-auto" src="Images/marvel vs dc.jpg" alt="Marvel versus DC comic book heroes banner"/>
@@ -37,10 +37,19 @@
     <div class="hidden md:block md:w-3/4 md:mx-auto border-2 border-purple-950">
         <img class="w-full h-auto" src="Images/marvel vs dc.jpg" alt="Marvel versus DC comic book heroes banner"/>
     </div>
+
+    <!-- Impact Title Overlay -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-widest text-purple-300 uppercase">
+        COMIC SITE
+        </h1>
+    </div>
 </header>
 
-<!-- Universe Selection Cards Section -->
+<!-- Main Content Area -->
 <main class="w-full">
+    
+    <!-- Universe Selection Cards Section -->
     <section class="grid md:grid-cols-2 grid-cols-1 gap-4 place-items-center w-full min-h-screen md:p-16 p-8 from-gray-950 bg-gradient-to-b to-purple-900">
         
         <!-- Marvel Universe Card -->
@@ -56,6 +65,44 @@
         </div>
 
     </section>
+
+    <!-- Modern Culture Essay Section -->
+    <section class="bg-gray-950 py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-purple-400 mb-8">
+                COMICS TODAY
+            </h2>
+            <div class="bg-purple-950 border border-purple-800 rounded-xl p-6 md:p-8 space-y-4 leading-relaxed text-gray-200 shadow-xl">
+                <p>
+                    Comic books have evolved from printed newsstand serials into central pillars of global entertainment. The characters and mythologies originally created decades ago by publishers like Marvel and DC now power multi-billion dollar cinematic franchises, video games, digital media, and mainstream fashion. Superhero stories provide a shared cultural language that connects audiences across different generations and continents.
+                </p>
+                <p>
+                    Beyond entertainment, comic books offer meaningful commentary on contemporary society. Storylines frequently address real-world issues including justice, responsibility, morality, and civil rights. By featuring diverse heroes facing relatable human struggles, comic narratives encourage important conversations about acceptance, diversity, and mental health.
+                </p>
+                <p>
+                    Ultimately, comic books endure because they inspire hope. By showcasing flawed individuals who choose to stand up against overwhelming adversity, comics remind readers of the power of perseverance, empathy, and positive action in everyday life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="bg-purple-950 py-12 border-t-2 border-purple-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-purple-300 mb-6">
+                FEATURED CROSSOVER TRAILER
+            </h3>
+            <div class="flex justify-center">
+                <video muted loop autoplay class="w-full md:w-3/4 border-2 md:border-4 border-purple-500 rounded-lg shadow-2xl" controls>
+                    <source src="Videos/Marvel vs DC Trailer.mp4" type="video/mp4">
+                    <source src="filename.ogg" type="video/ogg">
+                    <source src="filename.webm" type="video/webm">
+                    Sorry... Your browser does not support HTML5 video!
+                </video>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 </body>
