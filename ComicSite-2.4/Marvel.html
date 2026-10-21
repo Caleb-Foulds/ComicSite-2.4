@@ -3,84 +3,104 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<!-- Navigation Bar -->
 <div class="overflow-hidden w-full grid grid-cols-7 bg-red-700 border-2 border-gray-950">
+    <!-- Home Logo Button -->
     <button onclick="window.location.href='index.html';" class="mx-auto h-8 lg:h-16">
-        <img class="h-8 lg:h-16 active:h-6 active:lg:h-12 transition duration-300" src="Images\marvel_dc-3.png" />
+        <img class="h-8 lg:h-16 active:h-6 active:lg:h-12 transition duration-300" src="Images\marvel_dc-3.png" alt="Marvel and DC logo home link" />
     </button>
+    
+    <!-- Navigation Buttons -->
     <button class="col-span-2 text-white hover:bg-red-600 active:bg-red-400 px-4 border-gray-950 border transition duration-150">
         MARVEL
     </button>
     <button onclick="window.location.href='DC.html';" class="col-span-2 text-white hover:bg-blue-800 active:bg-blue-400 px-4 border-gray-950 border transition duration-150">
         DC
     </button>
-    <button class="col-span-2 text-white hover:bg-gray-800 active:bg-gray-400 px-4 border-gray-950 border transition duration-150">
+    <button onclick="window.location.href='index.php';" class="col-span-2 text-white hover:bg-gray-800 active:bg-gray-400 px-4 border-gray-950 border transition duration-150">
         DATABASE
     </button>
 </div>
 
+<!-- Hero Wallpaper Banner -->
 <div class="w-full">
-    <img src="Images\MarvelWallpaper7.jpg"/>
+    <img src="Images\MarvelWallpaper7.jpg" alt="Marvel superhero banner wallpaper"/>
 </div>
 
+<!-- Video Trailer Section -->
 <div class="grid grid-cols-1 h-screen from-[#9f0101] bg-gradient-to-b to-gray-950">
     <video muted loop autoplay class="w-3/4 mx-auto border-2 md:border-4 border-red-500" controls>
-        <source src="Videos\Marvel Studios' Avengers_ Infinity War Official Trailer_6ZfuNTqbHE8_1080p.mp4"  type="video/mp4">
-        <source src="filename.ogg"  type="video/ogg">
+        <source src="Videos\Marvel Studios' Avengers_ Infinity War Official Trailer_6ZfuNTqbHE8_1080p.mp4" type="video/mp4">
+        <source src="filename.ogg" type="video/ogg">
         <source src="filename.webm" type="video/webm">
     
         Sorry... Your browser does not support HTML5 video!
     </video>
+</div>
 
-</div>
+<!-- Main Content Area -->
 <div class="h-1/2 bg-gray-950">
-<div class="grid grid-cols-1 py-16">
-    <h1 class="text-4xl mx-auto text-red-500 p-6">
-        MARVEL BEGINS
-    </h1>
-    <p1 class="text-white bg-red-950 mx-auto w-1/2 rounded-xl p-2">
-    Marvel Comics (at the time known as Timely Comics) was founded in the year 1939, releasing their first comic in August of that year.
-    Their first comic features the first apparences of both The Android Human Torch and Namor the Sub-Mariner. 
-    Marvel become the comic company's name due to a bussiness stratagy where Timely Comics used various shell companies to relase their comics.
-    One of these companies was called Marvel Comics, and it's name was first used as the primary name of the company in 1961.
-    The modern era of Marvel also started in 1961, when The Fantastic Four #1 comic was released. 
-    </p1>
-</div>
-<div class="grid h-screen bg-gray-950">
-    <h2 class="text-4xl mx-auto text-red-500 p-6">
-        FAMOUS MARVEL TEAMS
-    </h2>
-    <div class="flex">
-        <div class="grid w-full bg-red-800 rounded-lg mx-4">
-            <h3 class="text-white text-2xl mx-auto">
-THE AVENGERS
-            </h3>
-            <img class="mx-auto" src="Images\Avengers3.png">
-            <p3 class="bg-red-400 overflow-hidden rounded-xl p-2 m-2">
-The Avengers are a staple hero team in the Marvel Universe. This Team has gone thourgh various iterations thourghout it's history,
-            </p3>
-        </div>
-        <div class="grid w-full bg-blue-800 rounded-lg mx-4">
-            <h3 class="text-white text-2xl mx-auto">
-THE X-MEN
-            </h3>
-            <img class="mx-auto" src="Images\Xmen.jpg">
-            <p3 class="bg-blue-400 overflow-hidden rounded-xl p-2 m-2">
-The X-men are a group of humans that have gained power via mutations, thus becoming mutants. They are led by their founder, Charles Xavier/Professor X,
-out of a school he runs in his mansion, also known as the X-Mansion.
-            </p3>
-        </div>
-        <div class="grid w-full bg-purple-800 rounded-lg mx-4">
-            <h3 class="text-white text-2xl mx-auto">
-THE GUARDIANS OF THE GALAXY
-            </h3>
-            <img class="mx-auto" src="Images\MarvelWallpaper8.jpg">
-            <p3 class="bg-purple-400 overflow-hidden rounded-xl p-2 m-2">
-The ragtag team of universe saving misfits. The Guardians of the Galaxy are a small team that travel around the universe stopping
-intergalatic dangers.
-            </p3>
+
+    <!-- Marvel Origins Section -->
+    <div class="grid grid-cols-1 py-16">
+        <h1 class="text-4xl mx-auto text-red-500 p-6">
+            MARVEL BEGINS
+        </h1>
+        <p1 class="text-white bg-red-950 mx-auto w-1/2 rounded-xl p-2">
+            Marvel Comics (at the time known as Timely Comics) was founded in the year 1939, releasing their first comic in August of that year.
+            Their first comic features the first apparences of both The Android Human Torch and Namor the Sub-Mariner. 
+            Marvel become the comic company's name due to a bussiness stratagy where Timely Comics used various shell companies to relase their comics.
+            One of these companies was called Marvel Comics, and it's name was first used as the primary name of the company in 1961.
+            The modern era of Marvel also started in 1961, when The Fantastic Four #1 comic was released. 
+        </p1>
+    </div>
+
+    <!-- Marvel Teams Section -->
+    <div class="grid h-screen bg-gray-950">
+        <h2 class="text-4xl mx-auto text-red-500 p-6">
+            FAMOUS MARVEL TEAMS
+        </h2>
+        
+        <!-- Team Cards Layout -->
+        <div class="flex">
+            
+            <!-- Card: The Avengers -->
+            <div class="grid w-full bg-red-800 rounded-lg mx-4">
+                <h3 class="text-white text-2xl mx-auto">
+                    THE AVENGERS
+                </h3>
+                <img class="mx-auto" src="Images\Avengers3.png" alt="The Avengers team roster">
+                <p3 class="bg-red-400 overflow-hidden rounded-xl p-2 m-2">
+                    The Avengers are a staple hero team in the Marvel Universe. This Team has gone thourgh various iterations thourghout it's history,
+                </p3>
+            </div>
+
+            <!-- Card: The X-Men -->
+            <div class="grid w-full bg-blue-800 rounded-lg mx-4">
+                <h3 class="text-white text-2xl mx-auto">
+                    THE X-MEN
+                </h3>
+                <img class="mx-auto" src="Images\Xmen.jpg" alt="The X-Men mutant team gathered">
+                <p3 class="bg-blue-400 overflow-hidden rounded-xl p-2 m-2">
+                    The X-men are a group of humans that have gained power via mutations, thus becoming mutants. They are led by their founder, Charles Xavier/Professor X,
+                    out of a school he runs in his mansion, also known as the X-Mansion.
+                </p3>
+            </div>
+
+            <!-- Card: Guardians of the Galaxy -->
+            <div class="grid w-full bg-purple-800 rounded-lg mx-4">
+                <h3 class="text-white text-2xl mx-auto">
+                    THE GUARDIANS OF THE GALAXY
+                </h3>
+                <img class="mx-auto" src="Images\MarvelWallpaper8.jpg" alt="Guardians of the Galaxy cosmic heroes">
+                <p3 class="bg-purple-400 overflow-hidden rounded-xl p-2 m-2">
+                    The ragtag team of universe saving misfits. The Guardians of the Galaxy are a small team that travel around the universe stopping
+                    intergalatic dangers.
+                </p3>
+            </div>
+
         </div>
     </div>
-</div>
 
 </div>
 </html>

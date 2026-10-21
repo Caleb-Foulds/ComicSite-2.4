@@ -1,37 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Universe</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-950 text-white font-sans">
 
-<div class="overflow-hidden w-full grid grid-cols-7 bg-blue-700 border-2 border-gray-950">
-    <button class="mx-auto h-8 lg:h-16 transition duration-300">
-        <img class="h-8 lg:h-16 active:h-6 active:lg:h-12 transition duration-300" src="Images\marvel_dc-3.png" />
+<!-- Navigation Bar -->
+<nav class="overflow-hidden w-full grid grid-cols-7 bg-blue-700 border-2 border-gray-950">
+    <!-- Home Logo Button -->
+    <button onclick="window.location.href='index.html';" class="mx-auto h-8 lg:h-16 transition duration-300">
+        <img class="h-8 lg:h-16 active:h-6 active:lg:h-12 transition duration-300" src="Images/marvel_dc-3.png" alt="Marvel and DC home logo button" />
     </button>
-    <button class="col-span-2 text-white hover:bg-red-600 active:bg-red-400 px-4 border-gray-950 border transition duration-150">
+
+    <!-- Navigation Buttons -->
+    <button onclick="window.location.href='Marvel.html';" class="col-span-2 text-white hover:bg-red-600 active:bg-red-400 px-4 border-gray-950 border transition duration-150">
         MARVEL
     </button>
-    <button class="col-span-2 text-white hover:bg-blue-800 active:bg-blue-400 px-4 border-gray-950 border">
+    <button class="col-span-2 text-white hover:bg-blue-800 active:bg-blue-400 px-4 border-gray-950 border transition duration-150">
         DC
     </button>
-    <button class="col-span-2 text-white hover:bg-gray-800 active:bg-gray-400 px-4 border-gray-950 border">
+    <button onclick="window.location.href='index.php';" class="col-span-2 text-white hover:bg-gray-800 active:bg-gray-400 px-4 border-gray-950 border transition duration-150">
         DATABASE
     </button>
-</div>
+</nav>
 
-<div class="grid realtive">
-    <img src="Images\DCWallpaper4.jpg" class="col-start-1 row-start-1 w-full h-auto"/>
-    <img src="Images\DCLogoBlue.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto"/>
-</div>
+<!-- Hero Banner Section with Layered Logo -->
+<header class="grid relative">
+    <img src="Images/DCWallpaper4.jpg" class="col-start-1 row-start-1 w-full h-auto object-cover" alt="DC Comics superhero background wallpaper"/>
+    <img src="Images/DCLogoBlue.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-auto" alt="DC Comics official emblem overlay"/>
+</header>
 
-<div class="h-screen from-gray-950 bg-gradient-to-b to-blue-900">
+<!-- Video Trailer Section -->
+<section class="grid grid-cols-1 min-h-screen from-gray-950 bg-gradient-to-b to-blue-900 flex items-center justify-center py-10">
     <video muted loop autoplay class="w-3/4 mx-auto border-2 md:border-4 border-blue-400" controls>
-        <source src="Videos\[60FPS] Batman v Superman Ultimate Edition warehouse fight Scene 60FPS HFR HD.mp4"  type="video/mp4">
-        <source src="filename.ogg"  type="video/ogg">
+        <source src="Videos/[60FPS] Batman v Superman Ultimate Edition warehouse fight Scene 60FPS HFR HD.mp4" type="video/mp4">
+        <source src="filename.ogg" type="video/ogg">
         <source src="filename.webm" type="video/webm">
-    
         Sorry... Your browser does not support HTML5 video!
     </video>
-    
-</div>
+</section>
 
+<!-- Main Content Area -->
+<main class="bg-blue-900">
+
+    <!-- DC Origins Section -->
+    <section class="grid grid-cols-1 py-16">
+        <h1 class="text-4xl mx-auto text-blue-500 p-6 font-bold">
+            DC BEGINS
+        </h1>
+        <p class="text-white bg-blue-950 mx-auto w-11/12 md:w-1/2 rounded-xl p-4 leading-relaxed">
+            DC Comics was originally founded in 1934 as National Allied Publications. The publisher ushered in the superhero era with Action Comics #1 in 1938, introducing Superman to the world, followed by Batman in Detective Comics #27 in 1939. The initials "DC" come from the flagship Detective Comics line, which officially became the company's full name in 1977.
+        </p>
+    </section>
+
+    <!-- DC Teams Section -->
+    <section class="grid min-h-screen bg-blue-900 py-10">
+        <h2 class="text-4xl mx-auto text-blue-500 p-6 font-bold">
+            FAMOUS DC TEAMS
+        </h2>
+
+        <!-- Team Cards Layout -->
+        <div class="flex flex-col md:flex-row gap-4 px-4">
+
+            <!-- Card: The Justice League -->
+            <div class="grid w-full bg-blue-900 rounded-lg p-4">
+                <h3 class="text-white text-2xl mx-auto font-semibold mb-2">
+                    JUSTICE LEAGUE
+                </h3>
+                <img class="mx-auto rounded" src="Images/JusticeLeague.jpg" alt="Justice League heroes lineup">
+                <p class="bg-blue-400 text-gray-950 rounded-xl p-3 mt-4">
+                    The Justice League is DC's premier superhero team. Made up of iconic heroes like Superman, Batman, Wonder Woman, and The Flash, they defend Earth from cosmic and apocalyptic threats.
+                </p>
+            </div>
+
+            <!-- Card: The Teen Titans -->
+            <div class="grid w-full bg-sky-800 rounded-lg p-4">
+                <h3 class="text-white text-2xl mx-auto font-semibold mb-2">
+                    TEEN TITANS
+                </h3>
+                <img class="mx-auto rounded" src="Images/TeenTitans.jpg" alt="Teen Titans superhero group">
+                <p class="bg-sky-400 text-gray-950 rounded-xl p-3 mt-4">
+                    A team composed of young heroes and sidekicks led by Robin. They protect Jump City and battle powerful adversaries while navigating the struggles of growing up.
+                </p>
+            </div>
+
+            <!-- Card: The Suicide Squad -->
+            <div class="grid w-full bg-amber-800 rounded-lg p-4">
+                <h3 class="text-white text-2xl mx-auto font-semibold mb-2">
+                    SUICIDE SQUAD
+                </h3>
+                <img class="mx-auto rounded" src="Images/SuicideSquad.jpg" alt="Suicide Squad task force of supervillains">
+                <p class="bg-amber-400 text-gray-950 rounded-xl p-3 mt-4">
+                    Officially known as Task Force X, this secret government unit deploys incarcerated supervillains on high-risk covert operations in exchange for commuted prison sentences.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
 </html>

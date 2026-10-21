@@ -1,45 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel vs DC</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-purple-900 text-white font-sans">
 
-<div class="overflow-hidden w-full grid grid-cols-7 bg-purple-700 border-2 border-gray-950">
-    <button class="mx-auto h-8 lg:h-16">
-        <img class="h-8 lg:h-16 active:h-6 active:lg:h-12 transition duration-300" src="Images\marvel_dc-3.png" />
+<!-- Navigation Bar -->
+<nav class="overflow-hidden w-full grid grid-cols-7 bg-purple-700 border-2 border-gray-950">
+    <!-- Home Logo Button -->
+    <button onclick="window.location.href='index.html';" class="mx-auto h-8 lg:h-16">
+        <img class="h-8 lg:h-16 active:h-6 active:lg:h-12 transition duration-300" src="Images/marvel_dc-3.png" alt="Marvel and DC home logo button" />
     </button>
+    
+    <!-- Navigation Buttons -->
     <button onclick="window.location.href='Marvel.html';" class="col-span-2 text-white hover:bg-red-600 active:bg-red-400 px-4 border-gray-950 border transition duration-150">
         MARVEL
     </button>
     <button onclick="window.location.href='DC.html';" class="col-span-2 text-white hover:bg-blue-800 active:bg-blue-400 px-4 border-gray-950 border transition duration-150">
         DC
     </button>
-    <button class="col-span-2 text-white hover:bg-gray-800 active:bg-gray-400 px-4 border-gray-950 border transition duration-150">
+    <button onclick="window.location.href='index.php';" class="col-span-2 text-white hover:bg-gray-800 active:bg-gray-400 px-4 border-gray-950 border transition duration-150">
         DATABASE
     </button>
-</div>
+</nav>
 
-
-<div class="w-full overflow-hidden bg-purple-700">
-    <div class="flex items-center -ml-[50vw] -mr-[50vw] md:hidden  border-2 border-purple-950"> <!--Image that extends outside of the screen edge, displayed on mobile-->
-        <img src="Images\marvel vs dc.jpg"/>
+<!-- Hero Banner Section -->
+<header class="w-full overflow-hidden bg-purple-700">
+    <!-- Mobile Full Bleed Banner Image -->
+    <div class="flex items-center -ml-[50vw] -mr-[50vw] md:hidden border-2 border-purple-950">
+        <img class="w-full h-auto" src="Images/marvel vs dc.jpg" alt="Marvel versus DC comic book heroes banner"/>
     </div>
-    <div class="hidden md:block md:w-3/4 md:mx-auto border-2 border-purple-950"> <!--Image that extends exatly to the screen edge, uses the other image type on mobile-->
-        <img src="Images\marvel vs dc.jpg"/>
+    <!-- Desktop Centered Banner Image -->
+    <div class="hidden md:block md:w-3/4 md:mx-auto border-2 border-purple-950">
+        <img class="w-full h-auto" src="Images/marvel vs dc.jpg" alt="Marvel versus DC comic book heroes banner"/>
     </div>
-</div>
+</header>
 
-<div class="grid md:grid-cols-2 grid-cols-1 gap-2 block place-items-center w-full h-7/8 md:h-screen xl:h-[vh-150] md:p-16 p-8 from-gray-950 bg-gradient-to-b to-purple-900"> <!--displays Marvel and DC images side-by-side-->
-    <div class="flex items-center justify-center grid overflow-hidden rounded-lg w-1/2 md:w-3/4 max-h-full 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm"> <!--groups the Marvel image and Marvel logo together in a grid within the same slot to place the logo over the image-->
-        <img src="Images\Avengers.jpg" class="col-start-1 row-start-1 w-full h-auto"/>
-        <img src="Images\MarvelLogoPNG.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-4"/>
-    </div>
-    <div class="flex items-center justify-center grid overflow-hidden rounded-lg w-1/2 md:w-3/4 max-h-full 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm"> <!--groups the DC image and DC logo together in a grid within the same slot to place the logo over the image-->
-        <img src="Images\JusticeLeague.jpg" class="col-start-1 row-start-1 w-full h-auto"/>
-        <img src="Images\DCLogoBlue.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-4"/>
-    </div>
-</div>
+<!-- Universe Selection Cards Section -->
+<main class="w-full">
+    <section class="grid md:grid-cols-2 grid-cols-1 gap-4 place-items-center w-full min-h-screen md:p-16 p-8 from-gray-950 bg-gradient-to-b to-purple-900">
+        
+        <!-- Marvel Universe Card -->
+        <div class="grid items-center justify-center overflow-hidden rounded-lg w-3/4 md:w-3/4 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm cursor-pointer" onclick="window.location.href='Marvel.html';">
+            <img src="Images/Avengers.jpg" class="col-start-1 row-start-1 w-full h-auto" alt="The Avengers team background"/>
+            <img src="Images/MarvelLogoPNG.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-4" alt="Marvel Comics official logo"/>
+        </div>
 
-<div class="w-full h-screen bg-purple-900">
-</div>
+        <!-- DC Universe Card -->
+        <div class="grid items-center justify-center overflow-hidden rounded-lg w-3/4 md:w-3/4 2xl:w-1/2 shadow-md hover:shadow-2xl active:shadow-sm cursor-pointer" onclick="window.location.href='DC.html';">
+            <img src="Images/JusticeLeague.jpg" class="col-start-1 row-start-1 w-full h-auto" alt="Justice League heroes background"/>
+            <img src="Images/DCLogoBlue.png" class="col-start-1 row-start-1 w-1/2 h-auto mx-auto my-4" alt="DC Comics official logo"/>
+        </div>
 
+    </section>
+</main>
+
+</body>
 </html>
